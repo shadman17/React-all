@@ -56,11 +56,11 @@ class ProductPage extends React.Component {
           if (el) {
             el.remove();  // removing the spinner element
             this.setState({ loading: false }); // showing the app
-          }
+          }                
         });
       }
     
-      fakeRequest = () => {
+      fakeRequest = () => {  
         return new Promise(resolve => setTimeout(() => resolve(), 2000));
       };
 
@@ -87,7 +87,7 @@ class ProductPage extends React.Component {
             </div>
         )
 
-    }
+    } 
 
 
 }
