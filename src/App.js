@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ProductPage from './product-page.component';
+import ProductPage from './components/productpage/product-page.component';
 
 
 function App (){
