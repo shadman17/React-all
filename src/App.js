@@ -10,40 +10,40 @@ function App() {
       id: 1,
       name: "Shirt",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam omnis nihil numquam quaerat quisquam error vitae in officiis iste eaque laborum praesentium veniam, magni quo quia asperiores, unde et?",
-      price: "1000",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias magnam illo reprehenderit? Reiciendis aspernatur laboriosam voluptatem, itaque id incidunt suscipit. Assumenda reiciendis exercitationem neque quos repellendus error repudiandae illo, omnis magnam officia vel non, incidunt consequatur autem. Similique, qui dolores quis blanditiis, impedit at nisi sapiente eum repellendus magnam quaerat!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias magnam illo reprehenderit? Reiciendis aspernatur laboriosam voluptatem, itaque id incidunt suscipit. Assumenda reiciendis exercitationem neque quos repellendus error repudiandae illo, omnis magnam officia vel non, incidunt consequatur autem. Similique, qui dolores quis blanditiis, impedit at nisi sapiente eum repellendus magnam quaerat",
+      price: "1000-2000",
       category: "Shirt",
     },
     {
       id: 2,
       name: "Pant",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam omnis nihil numquam quaerat quisquam error vitae in officiis iste eaque laborum praesentium veniam, magni quo quia asperiores, unde et?",
-      price: "1500",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias magnam illo reprehenderit? Reiciendis aspernatur laboriosam voluptatem, itaque id incidunt suscipit. Assumenda reiciendis exercitationem neque quos repellendus error repudiandae illo, omnis magnam officia vel non, incidunt consequatur autem. Similique, qui dolores quis blanditiis, impedit at nisi sapiente eum repellendus magnam quaerat!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias magnam illo reprehenderit? Reiciendis aspernatur laboriosam voluptatem, itaque id incidunt suscipit. Assumenda reiciendis exercitationem neque quos repellendus error repudiandae illo, omnis magnam officia vel non, incidunt consequatur autem. Similique, qui dolores quis blanditiis, impedit at nisi sapiente eum repellendus magnam quaerat",
+      price: "1500-3000",
       category: "Pant",
     },
     {
       id: 3,
-      name: "T-shirt",
+      name: "Jackets",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam omnis nihil numquam quaerat quisquam error vitae in officiis iste eaque laborum praesentium veniam, magni quo quia asperiores, unde et?",
-      price: "300",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias magnam illo reprehenderit? Reiciendis aspernatur laboriosam voluptatem, itaque id incidunt suscipit. Assumenda reiciendis exercitationem neque quos repellendus error repudiandae illo, omnis magnam officia vel non, incidunt consequatur autem. Similique, qui dolores quis blanditiis, impedit at nisi sapiente eum repellendus magnam quaerat!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias magnam illo reprehenderit? Reiciendis aspernatur laboriosam voluptatem, itaque id incidunt suscipit. Assumenda reiciendis exercitationem neque quos repellendus error repudiandae illo, omnis magnam officia vel non, incidunt consequatur autem. Similique, qui dolores quis blanditiis, impedit at nisi sapiente eum repellendus magnam quaerat",
+      price: "3000-5000",
       category: "T-shirt",
     },
     {
       id: 4,
       name: "Hats",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam omnis nihil numquam quaerat quisquam error vitae in officiis iste eaque laborum praesentium veniam, magni quo quia asperiores, unde et?",
-      price: "220",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias magnam illo reprehenderit? Reiciendis aspernatur laboriosam voluptatem, itaque id incidunt suscipit. Assumenda reiciendis exercitationem neque quos repellendus error repudiandae illo, omnis magnam officia vel non, incidunt consequatur autem. Similique, qui dolores quis blanditiis, impedit at nisi sapiente eum repellendus magnam quaerat!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias magnam illo reprehenderit? Reiciendis aspernatur laboriosam voluptatem, itaque id incidunt suscipit. Assumenda reiciendis exercitationem neque quos repellendus error repudiandae illo, omnis magnam officia vel non, incidunt consequatur autem. Similique, qui dolores quis blanditiis, impedit at nisi sapiente eum repellendus magnam quaerat",
+      price: "300-1000",
       category: "Hats",
     },
     {
       id: 5,
       name: "Shoe",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam omnis nihil numquam quaerat quisquam error vitae in officiis iste eaque laborum praesentium veniam, magni quo quia asperiores, unde et?",
-      price: "2000",
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias magnam illo reprehenderit? Reiciendis aspernatur laboriosam voluptatem, itaque id incidunt suscipit. Assumenda reiciendis exercitationem neque quos repellendus error repudiandae illo, omnis magnam officia vel non, incidunt consequatur autem. Similique, qui dolores quis blanditiis, impedit at nisi sapiente eum repellendus magnam quaerat!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias magnam illo reprehenderit? Reiciendis aspernatur laboriosam voluptatem, itaque id incidunt suscipit. Assumenda reiciendis exercitationem neque quos repellendus error repudiandae illo, omnis magnam officia vel non, incidunt consequatur autem. Similique, qui dolores quis blanditiis, impedit at nisi sapiente eum repellendus magnam quaerat",
+      price: "1000-2000",
       category: "Shoe",
     },
   ]);
@@ -57,7 +57,7 @@ function App() {
     setTimeout(() => {
       setSelectedProduct(product);
       loaderChange(false)
-    }, 1000);
+    }, 500);
 
   };
 
@@ -71,7 +71,8 @@ function App() {
 
 
   return (
-    <>
+    <div className="homepage">
+
     {
       loader ? <Oval color="#00BFFF" height={80} width={80} /> : (<> {selectedProduct === null ? (
         <ProductPage products={products} setProductDetail={setProductDetail} />
@@ -83,7 +84,7 @@ function App() {
       )} </>)
     }
       
-    </>
+    </div>
   );
 }
 
